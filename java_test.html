@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta name="viewport" content="width=device-width"> -->
+        <title>My Page</title>
+    </head>
+    <body>
+        <main>
+            <h1 id="Header1">My Page</h1>
+            <button className="b1" id="bu1">
+                Change Color
+            </button>
+            <button className="b2" id="bu2">
+                Change Color also
+            </button>
+            <button className="b3" id="bu3">
+                Change Header
+            </button>
+        </main>
+        
+    </body>
+</html>
+
+<script>
+    //change the body background color on button 1
+    const btn1 = document.getElementById("bu1");
+    function random(number) {
+    return Math.floor(Math.random() * (number + 1));
+    }
+
+    btn1.addEventListener("click", () => {
+    const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+    document.body.style.backgroundColor = rndCol;
+    });
+</script>
+<script>
+    //change the body background color on button 2
+    const btn2 = document.getElementById("bu2");
+    function random1(number) {
+    return Math.floor(Math.random() * (number + 1));
+    }
+
+    btn2.addEventListener("click", () => {
+    const rndCol = `rgb(${random1(255)} ${random1(255)} ${random1(255)})`;
+    document.body.style.backgroundColor = rndCol;
+    });
+</script>
+
+<script>
+    //change the body background color on button 1
+    const btn3 = document.getElementById("bu3");
+    const h1 = document.getElementById("Header1");
+    btn3.addEventListener("click", () => {
+        h1.innerHTML= h1.innerHTML + h1.innerHTML;
+    });
+</script>
