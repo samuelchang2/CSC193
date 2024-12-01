@@ -1,0 +1,31 @@
+html {
+    font-size: 10px;
+}
+  
+h1 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    text-shadow:    1px 5px 8px red,        /* 1px = horizontal offset      5px = veritcal offset       8px = blur radius */
+                    2px 2px 1px blue;
+
+    text-align: center;
+    letter-spacing: 2px;
+}
+  
+h1 + p {
+    font-weight: bold;
+}
+  
+p::first-line {
+    letter-spacing: 4px;
+    word-spacing: 4px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: red;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;   /* the vertical space each line takes up    1.6 = 1.6 times the height that the font takes up*/
+    letter-spacing: 1px;
+}
+  

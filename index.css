@@ -1,0 +1,10 @@
+.Head1 {
+    display: flex;
+    background-color: antiquewhite;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow:    1px 5px 8px red,        /* 1px = horizontal offset      5px = veritcal offset       8px = blur radius */
+                    2px 2px 1px blue;
+    justify-content: center;
+}
+
